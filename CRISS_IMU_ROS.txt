@@ -1,0 +1,31 @@
+Publisher
+
+The script first imports the necessary ROS libraries and message types.
+
+The imu_publisher() function is defined.
+
+The while loop continuously publishes IMU messages with a rate of 10 Hz.
+
+The linear acceleration is set to a constant value of 2.5 m/s^2 on the x-axis and 9.8 m/s^2 on the z-axis, representing gravity.
+
+The angular acceleration over the z-axis is varied from 1.0 to 10.0 by looping 100 times, with each iteration increasing the angular acceleration by 0.09.
+
+The IMU message is published using the imu_pub publisher object.
+
+
+Subscriber
+
+The script first imports the necessary ROS libraries and message types.
+
+The imu_callback(data) function is defined, which is called every time a new IMU message is received.
+
+The linear and angular acceleration values are printed to the console using the print() function.
+
+The imu_subscriber() function is defined.
+
+The IMU subscriber is set up to listen to the imu_data topic, which is published by the IMU data publisher.
+
+The imu_callback(data) function is called every time a new IMU message is received.
+
+
+When both scripts are running, we should see the linear and angular acceleration values printed to the console in the subscriber terminal window. 
