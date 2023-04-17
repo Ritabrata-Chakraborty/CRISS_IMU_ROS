@@ -56,13 +56,13 @@ def imu_publisher():
     imu_msg = Imu()
 
     # Set the linear acceleration in the x-axis
-    linear_acc_x = 2.5  # m/s^2
+    linear_acc_x = 2.5
 
     # Set the gravitational acceleration in the z-axis
-    gravity_z = 9.8  # m/s^2
+    gravity_z = 9.8
 
     # Set the initial angular acceleration in the z-axis
-    angular_acc_z = 1.0  # rad/s^2
+    angular_acc_z = 1.0
 
     # Set the initial orientation
     imu_msg.orientation.x = 0.0
